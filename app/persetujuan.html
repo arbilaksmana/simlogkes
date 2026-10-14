@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Persetujuan — SIMLOGKES</title>
+<link rel="stylesheet" href="assets/simlogkes.css">
+<link rel="icon" href="images/logo-dinkes.png">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="images/logo-dinkes.png" alt="Logo Dinas Kesehatan Jawa Barat">
+      <span class="name">SIMLOGKES</span>
+    </div>
+    <div class="nav-cap">Utama</div>
+    <a class="nav-item" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+    <a class="nav-item" href="permohonan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>Permohonan</a>
+    <a class="nav-item active" href="persetujuan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11l2 2 4-4"/><path d="M20 12V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"/><path d="M8 10h6M8 14h4"/></svg>Persetujuan</a>
+    <a class="nav-item" href="persediaan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5z"/><path d="M3 7l9 5 9-5M12 22V12"/></svg>Persediaan</a>
+    <a class="nav-item" href="distribusi.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h13v9H1zM14 11h4l3 3v3h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>Distribusi</a>
+    <a class="nav-item" href="gudang.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-8h10v8M7 17h10"/></svg>Gudang</a>
+    <a class="nav-item" href="batch-expired.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>Batch &amp; Expired</a>
+    <div class="nav-cap">Laporan</div>
+    <a class="nav-item" href="analitik.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v3M12 10v8M17 6v12"/></svg>Analitik</a>
+    <a class="nav-item" href="laporan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>Laporan</a>
+    <div class="spacer"></div>
+    <div class="side-user">
+      <div class="avatar">DR</div>
+      <div class="who"><b>dr. Rina</b><span>Admin Provinsi</span></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5M7 9l5-5 5 5"/></svg>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1>Persetujuan</h1>
+        <div class="sub">Alur approval dua tahap: Program → Farmasi · Senin, 13 Oktober 2025</div>
+      </div>
+      <div class="topbar-actions">
+        <a class="btn btn-ghost btn-icon" href="persetujuan-riwayat.html" title="Notifikasi"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></a>
+        <div class="chip">Hari Ini · 13 Okt 2025</div>
+      </div>
+    </header>
+
+    <main class="page">
+
+      <section class="kpi-row">
+        <div class="kpi">
+          <div class="lbl">Menunggu Approval Program</div>
+          <div class="val num" data-live="apv-program">6</div>
+          <div class="note">Tahap 1 · verifikasi usulan program</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Menunggu Approval Farmasi</div>
+          <div class="val num" data-live="apv-farmasi">4</div>
+          <div class="note">Tahap 2 · verifikasi stok &amp; realisasi</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Disetujui Bulan Ini</div>
+          <div class="val num" data-live="apv-aktif">45</div>
+          <div class="note">lolos tahap 2 · termasuk dalam pengiriman</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Ditolak</div>
+          <div class="val num" data-live="apv-ditolak">3</div>
+          <div class="note">Semua disertai catatan penolakan</div>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div class="card">
+          <div class="head">
+            <h2>Menunggu Approval Program <span class="badge yellow" style="margin-left:6px">6</span></h2>
+            <a class="small" href="permohonan.html">Semua permohonan →</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th style="padding:10px 10px">No. Permohonan</th><th style="padding:10px 10px">Fasilitas</th><th style="padding:10px 10px">Program</th><th style="padding:10px 10px">Tanggal</th><th style="padding:10px 10px">Aksi</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:10px 10px"><span class="mono">PRM-2025-0881</span></td>
+                  <td style="padding:10px 10px">RSUD Kab. Bekasi</td>
+                  <td style="padding:10px 10px">Imunisasi Anak</td>
+                  <td style="padding:10px 10px" class="num">12 Okt</td>
+                  <td style="padding:10px 10px"><a class="btn btn-primary btn-sm" href="#">Setujui</a> <a class="btn btn-ghost btn-sm" href="permohonan-tolak-modal.html">Tolak</a></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 10px"><span class="mono">PRM-2025-0879</span></td>
+                  <td style="padding:10px 10px">Dinkes Kota Cirebon</td>
+                  <td style="padding:10px 10px">Pengendalian TB</td>
+                  <td style="padding:10px 10px" class="num">12 Okt</td>
+                  <td style="padding:10px 10px"><a class="btn btn-primary btn-sm" href="#">Setujui</a> <a class="btn btn-ghost btn-sm" href="permohonan-tolak-modal.html">Tolak</a></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 10px"><span class="mono">PRM-2025-0876</span></td>
+                  <td style="padding:10px 10px">RSUD Kota Cimahi</td>
+                  <td style="padding:10px 10px">Penurunan Stunting</td>
+                  <td style="padding:10px 10px" class="num">11 Okt</td>
+                  <td style="padding:10px 10px"><a class="btn btn-primary btn-sm" href="#">Setujui</a> <a class="btn btn-ghost btn-sm" href="permohonan-tolak-modal.html">Tolak</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="hint" style="margin-top:10px" data-live="apv-foot1">3 dari 6 permohonan ditampilkan · tahap 1 dari 2 approval.</p>
+        </div>
+
+        <div class="card">
+          <div class="head">
+            <h2>Menunggu Approval Farmasi <span class="badge blue" style="margin-left:6px">4</span></h2>
+            <a class="small" href="persetujuan-riwayat.html">Riwayat →</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th style="padding:10px 10px">No. Permohonan</th><th style="padding:10px 10px">Fasilitas</th><th style="padding:10px 10px">Diminta</th><th style="padding:10px 10px">Realisasi</th><th style="padding:10px 10px">Aksi</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:10px 10px"><span class="mono">PRM-2025-0872</span></td>
+                  <td style="padding:10px 10px"><b>RSUD Kota Bandung</b><br><span class="muted small">Paracetamol 500mg</span></td>
+                  <td style="padding:10px 10px" class="num">5.000</td>
+                  <td style="padding:10px 10px"><input type="number" value="4500" min="0" max="5000" aria-label="Realisasi PRM-2025-0872" style="width:74px; padding:5px 8px"></td>
+                  <td style="padding:10px 10px"><a class="btn btn-primary btn-sm" href="#">Setujui</a> <a class="btn btn-ghost btn-sm" href="permohonan-tolak-modal.html">Tolak</a></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 10px"><span class="mono">PRM-2025-0869</span></td>
+                  <td style="padding:10px 10px"><b>Puskesmas Cibinong</b><br><span class="muted small">Infus NaCl 0,9%</span></td>
+                  <td style="padding:10px 10px" class="num">890</td>
+                  <td style="padding:10px 10px"><input type="number" value="800" min="0" max="890" aria-label="Realisasi PRM-2025-0869" style="width:74px; padding:5px 8px"></td>
+                  <td style="padding:10px 10px"><a class="btn btn-primary btn-sm" href="#">Setujui</a> <a class="btn btn-ghost btn-sm" href="permohonan-tolak-modal.html">Tolak</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="hint" style="margin-top:10px" data-live="apv-foot2">2 dari 4 permohonan ditampilkan · realisasi tidak boleh melebihi jumlah diminta.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="head">
+          <h2>Kewajiban Approval</h2>
+          <a class="small" href="persetujuan-riwayat.html">Lihat riwayat approval →</a>
+        </div>
+        <dl class="dl">
+          <div><dt>Pengguna approval</dt><dd>Petugas yang login — dr. Rina · Admin Provinsi</dd></div>
+          <div><dt>Waktu approval</dt><dd>Timestamp otomatis dari sistem</dd></div>
+          <div><dt>Catatan</dt><dd>Wajib diisi saat menolak permohonan</dd></div>
+          <div><dt>Histori perubahan</dt><dd>Tercatat otomatis (audit trail)</dd></div>
+        </dl>
+        <div class="note blue" style="margin-top:14px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span>Setiap permohonan melewati dua tahap: <b>Approval Program</b> (dr. Rina) lalu <b>Approval Farmasi</b> (Apt. Doni). Keputusan bersifat final dan tidak dapat diubah tanpa meninggalkan jejak pada histori perubahan.</span>
+        </div>
+      </section>
+
+      <p class="foot-note">SIMLOGKES — Sistem Informasi Manajemen Logistik Kesehatan Terintegrasi · Dinas Kesehatan Provinsi Jawa Barat</p>
+    </main>
+  </div>
+</div>
+<script src="assets/store.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laporan — SIMLOGKES</title>
+<link rel="stylesheet" href="assets/simlogkes.css">
+<link rel="icon" href="images/logo-dinkes.png">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="images/logo-dinkes.png" alt="Logo Dinas Kesehatan Jawa Barat">
+      <span class="name">SIMLOGKES</span>
+    </div>
+    <div class="nav-cap">Utama</div>
+    <a class="nav-item" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+    <a class="nav-item" href="permohonan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>Permohonan</a>
+    <a class="nav-item" href="persetujuan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11l2 2 4-4"/><path d="M20 12V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"/><path d="M8 10h6M8 14h4"/></svg>Persetujuan</a>
+    <a class="nav-item" href="persediaan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5z"/><path d="M3 7l9 5 9-5M12 22V12"/></svg>Persediaan</a>
+    <a class="nav-item" href="distribusi.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h13v9H1zM14 11h4l3 3v3h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>Distribusi</a>
+    <a class="nav-item" href="gudang.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-8h10v8M7 17h10"/></svg>Gudang</a>
+    <a class="nav-item" href="batch-expired.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>Batch &amp; Expired</a>
+    <div class="nav-cap">Laporan</div>
+    <a class="nav-item" href="analitik.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v3M12 10v8M17 6v12"/></svg>Analitik</a>
+    <a class="nav-item active" href="laporan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>Laporan</a>
+    <div class="spacer"></div>
+    <div class="side-user">
+      <div class="avatar">DR</div>
+      <div class="who"><b>dr. Rina</b><span>Admin Provinsi</span></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5M7 9l5-5 5 5"/></svg>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1>Laporan</h1>
+        <div class="sub">Arsip laporan logistik kesehatan provinsi &middot; Senin, 13 Oktober 2025</div>
+      </div>
+      <div class="topbar-actions">
+        <a class="btn btn-ghost btn-icon" href="laporan.html" title="Notifikasi"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></a>
+        <div class="chip">Hari Ini &middot; 13 Okt 2025</div>
+      </div>
+    </header>
+
+    <main class="page">
+
+      <section class="filterbar">
+        <div class="field">
+          <label for="periode">Periode</label>
+          <select id="periode">
+            <option selected>Oktober 2025</option>
+            <option>September 2025</option>
+            <option>Agustus 2025</option>
+            <option>Juli 2025</option>
+            <option>Juni 2025</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="jenis">Jenis Laporan</label>
+          <select id="jenis">
+            <option selected>Semua Jenis</option>
+            <option>Stok</option>
+            <option>Distribusi</option>
+            <option>Penerimaan</option>
+            <option>Retur</option>
+            <option>Pemusnahan</option>
+            <option>Kedaluwarsa</option>
+            <option>Permohonan</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="wilayah">Wilayah</label>
+          <select id="wilayah">
+            <option selected>Seluruh Jawa Barat</option>
+            <option>Kota Bandung</option>
+            <option>Kota Bogor</option>
+            <option>Kota Depok</option>
+            <option>Kota Bekasi</option>
+            <option>Kota Cimahi</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-secondary" style="margin-top:24px">Terapkan</button>
+      </section>
+
+      <section class="kpi-row">
+        <div class="kpi">
+          <div class="lbl">Laporan Bulan Ini</div>
+          <div class="val num">48</div>
+          <div class="delta up">&#9650; +6 vs bulan lalu</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Menunggu Review</div>
+          <div class="val num">5</div>
+          <div class="note">Menunggu verifikasi admin provinsi</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Final</div>
+          <div class="val num">39</div>
+          <div class="note">81% dari laporan bulan ini</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Draft</div>
+          <div class="val num">4</div>
+          <div class="note">Belum diajukan untuk review</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="head">
+          <h2>Daftar Laporan</h2>
+          <span class="muted">Periode Oktober 2025 &middot; Seluruh Jawa Barat</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>No. Laporan</th>
+                <th>Jenis</th>
+                <th>Periode</th>
+                <th>Wilayah</th>
+                <th>Dibuat Oleh</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="mono">LPR-2025-048</span></td>
+                <td><span class="badge blue">Stok</span></td>
+                <td>Okt 2025</td>
+                <td>Seluruh Jawa Barat</td>
+                <td>Budi Santoso</td>
+                <td><span class="pill green">Final</span></td>
+                <td><a href="laporan.html">Lihat</a> &middot; <a href="laporan.html">Unduh</a> &middot; <a href="laporan.html">Cetak</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">LPR-2025-047</span></td>
+                <td><span class="badge green">Distribusi</span></td>
+                <td>Okt 2025</td>
+                <td>Kota Bandung</td>
+                <td>Budi Santoso</td>
+                <td><span class="pill yellow">Review</span></td>
+                <td><a href="laporan.html">Lihat</a> &middot; <a href="laporan.html">Unduh</a> &middot; <a href="laporan.html">Cetak</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">LPR-2025-046</span></td>
+                <td><span class="badge blue">Penerimaan</span></td>
+                <td>Okt 2025</td>
+                <td>Kota Bogor</td>
+                <td>Agus Wijaya</td>
+                <td><span class="pill green">Final</span></td>
+                <td><a href="laporan.html">Lihat</a> &middot; <a href="laporan.html">Unduh</a> &middot; <a href="laporan.html">Cetak</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">LPR-2025-045</span></td>
+                <td><span class="badge" style="background:#EEF1F4;color:var(--text-secondary)">Permohonan</span></td>
+                <td>Okt 2025</td>
+                <td>Seluruh Jawa Barat</td>
+                <td>dr. Rina</td>
+                <td><span class="pill gray">Draft</span></td>
+                <td><a href="laporan.html">Lihat</a> &middot; <a href="laporan.html">Unduh</a> &middot; <a href="laporan.html">Cetak</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">LPR-2025-044</span></td>
+                <td><span class="badge yellow">Retur</span></td>
+                <td>Sep 2025</td>
+                <td>Kota Cimahi</td>
+                <td>Dewi Lestari</td>
+                <td><span class="pill green">Final</span></td>
+                <td><a href="laporan.html">Lihat</a> &middot; <a href="laporan.html">Unduh</a> &middot; <a href="laporan.html">Cetak</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">LPR-2025-043</span></td>
+                <td><span class="badge red">Pemusnahan</span></td>
+                <td>Sep 2025</td>
+                <td>Kota Bandung</td>
+                <td>Dewi Lestari</td>
+                <td><span class="pill green">Final</span></td>
+                <td><a href="laporan.html">Lihat</a> &middot; <a href="laporan.html">Unduh</a> &middot; <a href="laporan.html">Cetak</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">LPR-2025-042</span></td>
+                <td><span class="badge yellow">Kedaluwarsa</span></td>
+                <td>Sep 2025</td>
+                <td>Seluruh Jawa Barat</td>
+                <td>Agus Wijaya</td>
+                <td><span class="pill yellow">Review</span></td>
+                <td><a href="laporan.html">Lihat</a> &middot; <a href="laporan.html">Unduh</a> &middot; <a href="laporan.html">Cetak</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">LPR-2025-041</span></td>
+                <td><span class="badge blue">Stok</span></td>
+                <td>Sep 2025</td>
+                <td>Kota Depok</td>
+                <td>Budi Santoso</td>
+                <td><span class="pill gray">Draft</span></td>
+                <td><a href="laporan.html">Lihat</a> &middot; <a href="laporan.html">Unduh</a> &middot; <a href="laporan.html">Cetak</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tfoot">
+            <span>Menampilkan 1&ndash;8 dari 48 laporan</span>
+            <div class="pager">
+              <a class="on" href="laporan.html">1</a>
+              <a href="laporan.html">2</a>
+              <a href="laporan.html">3</a>
+              <a href="laporan.html">4</a>
+              <a href="laporan.html">5</a>
+              <a href="laporan.html">6</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p class="hint" style="text-align:center">Seluruh laporan dapat dilihat, diunduh, dan dicetak.</p>
+
+      <p class="foot-note">SIMLOGKES &mdash; Sistem Informasi Manajemen Logistik Kesehatan Terintegrasi &middot; Dinas Kesehatan Provinsi Jawa Barat</p>
+    </main>
+  </div>
+</div>
+<script src="assets/store.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

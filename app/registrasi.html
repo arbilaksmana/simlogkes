@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registrasi — SIMLOGKES</title>
+<link rel="stylesheet" href="assets/simlogkes.css">
+<link rel="icon" href="images/logo-dinkes.png">
+</head>
+<body>
+<div class="auth-wrap">
+
+  <aside class="auth-side">
+    <div class="brandline">
+      <img src="images/logo-dinkes.png" alt="Logo Dinas Kesehatan Jawa Barat" style="width:40px;height:40px;object-fit:contain">
+      SIMLOGKES
+    </div>
+    <div>
+      <h1>Registrasi Fasilitas Kesehatan</h1>
+      <p style="margin-top:14px">Satu akun untuk seluruh alur logistik: permohonan, approval, pengambilan, hingga pelaporan.</p>
+      <ul style="margin-top:24px">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Verifikasi dokumen fasilitas oleh Dinkes</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Profil fasilitas terkelola dalam satu akun</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tracking status permohonan real-time</li>
+      </ul>
+    </div>
+    <div class="small" style="color:#DDEDE3">&copy; 2025 Dinas Kesehatan Provinsi Jawa Barat</div>
+  </aside>
+
+  <section class="auth-panel">
+    <div class="auth-card">
+      <div>
+        <h2>Buat Akun Baru</h2>
+        <p class="muted small" style="margin-top:4px">Lengkapi data fasilitas kesehatan untuk mendaftar ke SIMLOGKES.</p>
+      </div>
+      <form class="form">
+        <div class="field">
+          <label for="nama">Nama Fasilitas</label>
+          <input type="text" id="nama" name="nama" placeholder="RSUD / Puskesmas ...">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="jenis">Jenis</label>
+            <select id="jenis" name="jenis">
+              <option>RSUD</option>
+              <option>Puskesmas</option>
+              <option>Klinik</option>
+              <option>Laboratorium</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="kab">Kabupaten/Kota</label>
+            <select id="kab" name="kab">
+              <option>Kota Bandung</option>
+              <option>Kota Bogor</option>
+              <option>Kota Depok</option>
+              <option>Kota Bekasi</option>
+              <option>Kota Cimahi</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass">
+          </div>
+          <div class="field">
+            <label for="pass2">Konfirmasi Password</label>
+            <input type="password" id="pass2" name="pass2">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Daftar</button>
+        <p class="hint" style="text-align:center">Sudah punya akun? <a href="login.html">Masuk</a></p>
+        <div class="note blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span>Akun aktif setelah verifikasi dokumen oleh admin Dinkes Provinsi (1&ndash;2 hari kerja).</span>
+        </div>
+      </form>
+      <p class="foot-note">SIMLOGKES &middot; Dinas Kesehatan Provinsi Jawa Barat</p>
+    </div>
+  </section>
+
+</div>
+<script src="assets/store.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIMLOGKES — Aplikasi Referensi HTML/CSS</title>
+<link rel="stylesheet" href="assets/simlogkes.css">
+<link rel="icon" href="images/logo-dinkes.png">
+<style>
+  .idx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+  .idx-grid a.card { display: block; text-decoration: none; color: inherit; transition: border-color .15s; }
+  .idx-grid a.card:hover { border-color: var(--primary); }
+  .idx-grid .meta { color: var(--text-muted); font-size: 12px; margin-top: 4px; }
+  .idx-grid .name { font-weight: 600; font-size: 14px; }
+  nav.crumbs { font-size: 13px; color: var(--text-muted); }
+  nav.crumbs a { color: var(--primary); }
+</style>
+</head>
+<body>
+<div class="shell" style="grid-template-columns: 1fr">
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1>SIMLOGKES — Aplikasi Referensi</h1>
+        <div class="sub">Implementasi HTML + CSS murni dari PRD · desain mengikuti design/ (pen.dev) · tanpa JavaScript</div>
+      </div>
+      <nav class="crumbs"><a href="../design/index.html">← Index referensi desain</a></nav>
+    </header>
+    <main class="page">
+
+      <section>
+        <h2 style="margin-bottom:12px">Alur Utama</h2>
+        <div class="idx-grid">
+          <a class="card" href="login.html"><div class="name">Masuk</div><div class="meta">6 role pengguna sesuai PRD §5</div></a>
+          <a class="card" href="registrasi.html"><div class="name">Registrasi Faskes</div><div class="meta">PRD 7.1 — akun + verifikasi dokumen</div></a>
+          <a class="card" href="dashboard.html"><div class="name">Dashboard</div><div class="meta">PRD 10 — KPI, peta Jabar, histori</div></a>
+          <a class="card" href="permohonan.html"><div class="name">Permohonan</div><div class="meta">PRD 7.2 — daftar + state machine §6</div></a>
+          <a class="card" href="permohonan-baru.html"><div class="name">Buat Permohonan</div><div class="meta">PRD 7.2 — form + stok real-time</div></a>
+          <a class="card" href="persetujuan.html"><div class="name">Persetujuan</div><div class="meta">PRD 7.3 — approval Program &amp; Farmasi</div></a>
+          <a class="card" href="persetujuan-riwayat.html"><div class="name">Riwayat Approval</div><div class="meta">PRD 7.3 — audit pengguna, waktu, catatan</div></a>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="margin-bottom:12px">Logistik &amp; Gudang</h2>
+        <div class="idx-grid">
+          <a class="card" href="persediaan.html"><div class="name">Persediaan</div><div class="meta">PRD 7.4 — allocated stock management</div></a>
+          <a class="card" href="distribusi.html"><div class="name">Distribusi</div><div class="meta">PRD 7.5 — picking, serah terima, QR</div></a>
+          <a class="card" href="gudang.html"><div class="name">Gudang</div><div class="meta">PRD 7.4/7.5 — penerimaan &amp; picking FEFO</div></a>
+          <a class="card" href="retur.html"><div class="name">Retur</div><div class="meta">PRD 7.6 — transaksi retur, bukan penerimaan</div></a>
+          <a class="card" href="pemusnahan.html"><div class="name">Pemusnahan</div><div class="meta">PRD 7.7 — berita acara &amp; histori</div></a>
+          <a class="card" href="batch-expired.html"><div class="name">Batch &amp; Expired</div><div class="meta">PRD 4.3 — FEFO, monitoring kedaluwarsa</div></a>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="margin-bottom:12px">Pelaporan &amp; Lainnya</h2>
+        <div class="idx-grid">
+          <a class="card" href="analitik.html"><div class="name">Analitik</div><div class="meta">PRD 10 — tren &amp; performa wilayah</div></a>
+          <a class="card" href="laporan.html"><div class="name">Laporan</div><div class="meta">PRD 11 — 7 jenis, lihat/unduh/cetak</div></a>
+          <a class="card" href="permohonan-tolak-modal.html"><div class="name">Modal Tolak</div><div class="meta">PRD 7.3 — catatan wajib penolakan</div></a>
+          <a class="card" href="../design/index.html"><div class="name">Referensi Desain →</div><div class="meta">19 layar kanvas asli (design/)</div></a>
+        </div>
+      </section>
+
+      <p class="foot-note">SIMLOGKES — Sistem Informasi Manajemen Logistik Kesehatan Terintegrasi · Dinas Kesehatan Provinsi Jawa Barat</p>
+    </main>
+  </div>
+</div>
+<script src="assets/store.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

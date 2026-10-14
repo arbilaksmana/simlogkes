@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — SIMLOGKES</title>
+<link rel="stylesheet" href="assets/simlogkes.css">
+<link rel="icon" href="images/logo-dinkes.png">
+</head>
+<body class="dashboard">
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="images/logo-dinkes.png" alt="Logo Dinas Kesehatan Jawa Barat">
+      <span class="name">SIMLOGKES<br><small>UTAMA</small></span>
+    </div>
+    <div class="nav-cap">Utama</div>
+    <a class="nav-item active" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+    <a class="nav-item" href="permohonan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>Permohonan</a>
+    <a class="nav-item" href="persetujuan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11l2 2 4-4"/><path d="M20 12V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"/><path d="M8 10h6M8 14h4"/></svg>Persetujuan</a>
+    <a class="nav-item" href="persediaan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5z"/><path d="M3 7l9 5 9-5M12 22V12"/></svg>Persediaan</a>
+    <a class="nav-item" href="distribusi.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h13v9H1zM14 11h4l3 3v3h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>Distribusi</a>
+    <a class="nav-item" href="gudang.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-8h10v8M7 17h10"/></svg>Gudang</a>
+    <a class="nav-item" href="batch-expired.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>Batch &amp; Expired</a>
+    <div class="nav-cap">Laporan</div>
+    <a class="nav-item" href="analitik.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v3M12 10v8M17 6v12"/></svg>Analitik</a>
+    <a class="nav-item" href="laporan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>Laporan</a>
+    <div class="spacer"></div>
+    <div class="side-user">
+      <div class="avatar">DR</div>
+      <div class="who"><b>dr. Rina</b><span>Admin Provinsi</span></div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5M7 9l5-5 5 5"/></svg>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1>Dashboard</h1>
+        <div class="sub">Ringkasan logistik kesehatan Jawa Barat · Senin, 13 Oktober 2025</div>
+      </div>
+      <div class="topbar-actions">
+        <a class="btn btn-ghost btn-icon" href="laporan.html" title="Notifikasi"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="dot-badge"></span></a>
+        <div class="period">
+          <span class="pv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span>
+          <span class="plabel">Hari Ini · 13 Okt</span>
+          <span class="pv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+        </div>
+        <a class="btn btn-primary" href="laporan.html">Unduh Laporan<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></svg></a>
+      </div>
+    </header>
+
+    <main class="page">
+
+      <section class="kpi-row">
+        <div class="kpi">
+          <div class="kpi-head"><div class="lbl">Total Stok Fisik</div><svg class="muted" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+          <div class="val num">128.470</div>
+          <div class="delta up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>+3,2% <span class="vs">vs bulan lalu</span></div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-head"><div class="lbl">Permohonan Aktif</div><svg class="muted" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+          <div class="val num">342</div>
+          <div class="delta up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>+12% <span class="vs">vs bulan lalu</span></div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-head"><div class="lbl">Pickup Hari Ini</div><svg class="muted" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+          <div class="val num">47/60</div>
+          <div class="delta up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>47 pickup selesai <span class="vs">· 78% dari 60 jadwal</span></div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-head"><div class="lbl">Batch Expired Alert</div><svg class="muted" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+          <div class="val num">23</div>
+          <div class="delta down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 17-8.5-8.5-5 5L2 7"/><path d="M16 17h6v-6"/></svg>-1,8% <span class="vs">vs bulan lalu</span></div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-head"><div class="lbl">Disetujui Bulan Ini</div><svg class="muted" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+          <div class="val num">45</div>
+          <div class="note">lolos approval program &amp; farmasi</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-head"><div class="lbl">Ditolak</div><svg class="muted" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></div>
+          <div class="val num">3</div>
+          <div class="note">dengan catatan penolakan</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="stat-row">
+          <div class="stat"><div class="lbl">Stok Fisik</div><div class="val num">128.470 <small>unit</small></div></div>
+          <div class="stat"><div class="lbl">Stok Tersedia</div><div class="val num">121.900 <small>unit</small></div></div>
+          <div class="stat"><div class="lbl">Stok Dialokasikan</div><div class="val num" style="color:var(--info)">6.570 <small>unit</small></div></div>
+          <div class="stat"><div class="lbl">Pickup Terlambat</div><div class="val num" style="color:var(--danger)">3 <small>wilayah</small></div></div>
+        </div>
+        <p class="hint" style="margin-top:12px">Barang dialokasikan masih tersimpan di gudang; stok fisik berkurang hanya setelah serah terima pickup · <a href="persediaan.html">RULE-STOCK-001/002</a></p>
+      </section>
+
+      <section class="cols-sidebar">
+        <div class="card" style="padding:20px 0 0; overflow:hidden">
+          <div class="head" style="padding:0 20px">
+            <h2>Peta Sebaran Jawa Barat</h2>
+            <span class="muted small">27 wilayah · filter aktif: Semua</span>
+          </div>
+          <div class="filterbar" style="padding:0 20px 14px">
+            <span class="chip on">Semua <span class="n">27</span></span>
+            <span class="chip green"><span class="dot green"></span>Selesai <span class="n">12</span></span>
+            <span class="chip"><span class="dot blue"></span>Pickup Hari Ini <span class="n">4</span></span>
+            <span class="chip"><span class="dot yellow"></span>Terjadwal <span class="n">10</span></span>
+            <span class="chip"><span class="dot red"></span>Perhatian <span class="n">1</span></span>
+          </div>
+          <iframe src="assets/peta-jabar.html" title="Peta sebaran Jawa Barat" class="map-frame"></iframe>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:16px; width:330px; flex:none">
+          <div class="card">
+            <div class="head" style="margin-bottom:0"><h2 style="font-size:14px">Realisasi Distribusi</h2><span class="muted" style="font-size:11px">Target 90%</span></div>
+            <div style="display:flex; align-items:flex-end; gap:10px; margin-top:4px">
+              <span class="num" style="font-size:48px; font-weight:700; line-height:1.05">87%</span>
+              <span class="delta up" style="font-size:12px; padding-bottom:8px"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>5% vs bulan lalu</span>
+            </div>
+            <div style="font-size:9px; font-weight:700; letter-spacing:0.5px; color:var(--text-muted); margin:10px 0 4px">STATUS 27 WILAYAH</div>
+            <div class="progress" style="border-radius:4px"><i class="green" style="width:46%"></i><i class="blue" style="width:16%"></i><i class="yellow" style="width:38%"></i><i class="red" style="width:4%; border-radius:0 4px 4px 0"></i></div>
+            <div style="display:flex; flex-direction:column; gap:6px; margin-top:10px">
+              <div style="display:flex; gap:16px"><span class="legend-item"><span class="dot green" style="width:7px;height:7px"></span><b style="font-size:12px">12</b><span class="muted" style="font-size:11px">Selesai</span></span><span class="legend-item"><span class="dot blue" style="width:7px;height:7px"></span><b style="font-size:12px">4</b><span class="muted" style="font-size:11px">Pickup Hari Ini</span></span></div>
+              <div style="display:flex; gap:16px"><span class="legend-item"><span class="dot yellow" style="width:7px;height:7px"></span><b style="font-size:12px">10</b><span class="muted" style="font-size:11px">Terjadwal</span></span><span class="legend-item"><span class="dot red" style="width:7px;height:7px"></span><b style="font-size:12px">1</b><span class="muted" style="font-size:11px">Perhatian</span></span></div>
+            </div>
+            <p class="hint" style="margin-top:8px">1.842 dari 2.117 unit barang telah diserahterimakan (87%)</p>
+          </div>
+
+          <div class="card" style="padding:20px; display:flex; flex-direction:column; gap:0">
+            <div class="head" style="margin-bottom:4px"><h2 style="font-size:14px">Jadwal Pickup</h2><span class="muted" style="font-size:12px">5/6 wilayah selesai</span></div>
+            <p style="font-size:12px; color:var(--text-secondary); padding-bottom:8px">Maks. 6 wilayah per hari</p>
+            <div class="rowlist">
+              <div class="slot"><span class="time">07.30</span><span>Kab. Bekasi</span><span class="pill green">Selesai</span></div>
+              <div class="slot"><span class="time">08.30</span><span>Kota Cirebon</span><span class="pill green">Selesai</span></div>
+              <div class="slot"><span class="time">09.30</span><span>Kab. Bogor</span><span class="pill green">Selesai</span></div>
+              <div class="slot"><span class="time">10.30</span><span>Kota Bandung</span><span class="pill blue">Berjalan</span></div>
+              <div class="slot"><span class="time">13.00</span><span>Kab. Tasikmalaya</span><span class="pill gray">Terjadwal</span></div>
+              <div class="slot"><span class="time">12 Okt</span><span>Pickup terlambat - Pangandaran</span><span class="pill red">Terlambat</span></div>
+            </div>
+            <div style="display:flex; gap:8px; align-items:center; border-top:1px solid var(--border); margin-top:0; padding-top:12px">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="var(--text-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span style="font-size:12px; color:var(--text-secondary); flex:1">Berikutnya: Sukabumi &amp; Ciamis · besok 08.00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div class="card">
+          <div class="head">
+            <h2>Peringatan Inventori <span class="pill red" style="margin-left:6px">41</span></h2>
+            <a class="small" href="batch-expired.html">Lihat semua →</a>
+          </div>
+          <div class="rowlist">
+            <a class="rowitem" href="batch-expired.html" style="text-decoration:none; color:inherit">
+              <span class="dot red"></span>
+              <div class="body"><b>Vaksin DPT</b><span>1.240 unit · kadaluarsa 30 hari · Gudang Bandung</span></div>
+              <span class="muted">›</span>
+            </a>
+            <a class="rowitem" href="batch-expired.html" style="text-decoration:none; color:inherit">
+              <span class="dot yellow"></span>
+              <div class="body"><b>Paracetamol 500mg</b><span>Sisa 260 unit · 52% dari stok minimum</span></div>
+              <span class="muted">›</span>
+            </a>
+            <a class="rowitem" href="batch-expired.html" style="text-decoration:none; color:inherit">
+              <span class="dot blue"></span>
+              <div class="body"><b>Infus NaCl 0,9%</b><span>890 unit · FEFO: kadaluarsa terdekat 12 Nov</span></div>
+              <span class="muted">›</span>
+            </a>
+            <a class="rowitem" href="batch-expired.html" style="text-decoration:none; color:inherit">
+              <span class="dot blue"></span>
+              <div class="body"><b>Ventilator MV-200</b><span>4 unit diminta · menunggu alokasi · RSUD Cianjur</span></div>
+              <span class="muted">›</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="head"><h2>Aktivitas Terkini</h2><a class="small" href="laporan.html">Lihat semua →</a></div>
+          <div class="rowlist">
+            <div class="rowitem"><span class="dot green"></span><div class="body"><b>Permohonan disetujui</b><span>RSUD Majalengka</span></div><span class="muted small num">09.45</span></div>
+            <div class="rowitem"><span class="dot blue"></span><div class="body"><b>Pickup selesai</b><span>Kota Cirebon · serah terima tercatat</span></div><span class="muted small num">09.12</span></div>
+            <div class="rowitem"><span class="dot yellow"></span><div class="body"><b>Batch masuk</b><span>Gudang Bandung · B-2025-0412</span></div><span class="muted small num">09.30</span></div>
+            <div class="rowitem"><span class="dot green"></span><div class="body"><b>Slot pickup dibuat</b><span>15 Okt · Kab. Bogor</span></div><span class="muted small num">08.47</span></div>
+            <div class="rowitem"><span class="dot red"></span><div class="body"><b>Peringatan kadaluarsa</b><span>Vaksin DPT · batch B-2025-012</span></div><span class="muted small num">08.02</span></div>
+          </div>
+        </div>
+      </section>
+
+      <p class="foot-note">SIMLOGKES — Sistem Informasi Manajemen Logistik Kesehatan Terintegrasi · Dinas Kesehatan Provinsi Jawa Barat</p>
+    </main>
+  </div>
+</div>
+<script src="assets/store.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

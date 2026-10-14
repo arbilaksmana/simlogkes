@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distribusi — SIMLOGKES</title>
+<link rel="stylesheet" href="assets/simlogkes.css">
+<link rel="icon" href="images/logo-dinkes.png">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="images/logo-dinkes.png" alt="Logo Dinas Kesehatan Jawa Barat">
+      <span class="name">SIMLOGKES</span>
+    </div>
+    <div class="nav-cap">Utama</div>
+    <a class="nav-item" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+    <a class="nav-item" href="permohonan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>Permohonan</a>
+    <a class="nav-item" href="persetujuan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11l2 2 4-4"/><path d="M20 12V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"/><path d="M8 10h6M8 14h4"/></svg>Persetujuan</a>
+    <a class="nav-item" href="persediaan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5z"/><path d="M3 7l9 5 9-5M12 22V12"/></svg>Persediaan</a>
+    <a class="nav-item active" href="distribusi.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h13v9H1zM14 11h4l3 3v3h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>Distribusi</a>
+    <a class="nav-item" href="gudang.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-8h10v8M7 17h10"/></svg>Gudang</a>
+    <a class="nav-item" href="batch-expired.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>Batch &amp; Expired</a>
+    <div class="nav-cap">Laporan</div>
+    <a class="nav-item" href="analitik.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v3M12 10v8M17 6v12"/></svg>Analitik</a>
+    <a class="nav-item" href="laporan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>Laporan</a>
+    <div class="spacer"></div>
+    <div class="side-user">
+      <div class="avatar">DR</div>
+      <div class="who"><b>dr. Rina</b><span>Admin Provinsi</span></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5M7 9l5-5 5 5"/></svg>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1>Distribusi</h1>
+        <div class="sub">Picking, pencatatan barang keluar, serah terima</div>
+      </div>
+      <div class="topbar-actions">
+        <a class="btn btn-ghost btn-icon" href="laporan.html" title="Notifikasi"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></a>
+        <div class="chip">Hari Ini · 13 Okt 2025</div>
+      </div>
+    </header>
+
+    <main class="page">
+
+      <section class="kpi-row">
+        <div class="kpi">
+          <div class="lbl">Distribusi Berjalan</div>
+          <div class="val num" data-live="dist-berjalan">12</div>
+          <div class="note">siap pickup <span data-live="dist-siap">8</span> · dalam pengiriman <span data-live="dist-kirim">4</span></div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Selesai Bulan Ini</div>
+          <div class="val num" data-live="dist-selesai">1.560</div>
+          <div class="note"><span data-live="dist-selesai-n">12</span> unit stok keluar tercatat</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Menunggu Serah Terima</div>
+          <div class="val num" data-live="dist-collected">220</div>
+          <div class="note">barang keluar belum dikonfirmasi penerima</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Perlu Perhatian</div>
+          <div class="val num" data-live="dist-terlambat">62</div>
+          <div class="note">pickup terlambat / bukti tidak lengkap</div>
+        </div>
+      </section>
+
+      <div class="filterbar">
+        <a class="chip on" href="distribusi.html">Semua <span class="n" data-live="chip-semua">24</span></a>
+        <a class="chip" href="distribusi.html">Siap Pickup <span class="n" data-live="chip-siap">8</span></a>
+        <a class="chip" href="distribusi.html">Dalam Pengiriman <span class="n" data-live="chip-kirim">4</span></a>
+        <a class="chip" href="distribusi.html">Selesai <span class="n" data-live="chip-selesai">12</span></a>
+      </div>
+
+      <section class="card" style="padding:20px 0 0; overflow:hidden">
+        <div class="head" style="padding:0 20px">
+          <h2>Daftar Distribusi</h2>
+          <span class="muted small">Picking FEFO otomatis per batch</span>
+        </div>
+        <div class="table-wrap" style="border:0; border-radius:0">
+          <table class="compact">
+            <thead>
+              <tr>
+                <th>No. Distribusi</th>
+                <th>Permohonan</th>
+                <th>Fasilitas</th>
+                <th>Item</th>
+                <th class="num">Qty</th>
+                <th>FEFO Batch</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="mono">DIST-2025-00427</span></td>
+                <td><span class="mono">PRM-2025-0148</span></td>
+                <td>RSUD Majalengka</td>
+                <td>Vaksin DPT</td>
+                <td class="num">2.500 vial</td>
+                <td><span class="mono">B-2025-0117</span><br><span class="muted small">exp 08/2026</span></td>
+                <td><span class="pill blue">Siap Pickup</span></td>
+                <td><a href="#">QR</a> · <a href="#">Detail</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">DIST-2025-00426</span></td>
+                <td><span class="mono">PRM-2025-0147</span></td>
+                <td>Puskesmas Cirebon Selatan</td>
+                <td>Paracetamol 500mg</td>
+                <td class="num">5.000 box</td>
+                <td><span class="mono">B-2025-0093</span><br><span class="muted small">exp 02/2027</span></td>
+                <td><span class="pill yellow">Dalam Pengiriman</span></td>
+                <td><a href="#">QR</a> · <a href="#">Detail</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">DIST-2025-00425</span></td>
+                <td><span class="mono">PRM-2025-0146</span></td>
+                <td>RSUD Cianjur</td>
+                <td>Infus NaCl 0,9%</td>
+                <td class="num">3.000 pack</td>
+                <td><span class="mono">B-2025-0088</span><br><span class="muted small">exp 11/2026</span></td>
+                <td><span class="pill green">Selesai</span></td>
+                <td><a href="#">QR</a> · <a href="#">Detail</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">DIST-2025-00424</span></td>
+                <td><span class="mono">PRM-2025-0145</span></td>
+                <td>Puskesmas Bogor Tengah</td>
+                <td>Vaksin DPT</td>
+                <td class="num">1.800 vial</td>
+                <td><span class="mono">B-2025-0119</span><br><span class="muted small">exp 09/2026</span></td>
+                <td><span class="pill blue">Siap Pickup</span></td>
+                <td><a href="#">QR</a> · <a href="#">Detail</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">DIST-2025-00423</span></td>
+                <td><span class="mono">PRM-2025-0144</span></td>
+                <td>RSUD Bekasi</td>
+                <td>Amoxicillin 500mg</td>
+                <td class="num">4.200 box</td>
+                <td><span class="mono">B-2025-0104</span><br><span class="muted small">exp 01/2027</span></td>
+                <td><span class="pill yellow">Dalam Pengiriman</span></td>
+                <td><a href="#">QR</a> · <a href="#">Detail</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">DIST-2025-00422</span></td>
+                <td><span class="mono">PRM-2025-0143</span></td>
+                <td>Puskesmas Depok</td>
+                <td>Ventilator MV-200</td>
+                <td class="num">2 unit</td>
+                <td><span class="mono">B-2025-0012</span><br><span class="muted small">exp 12/2030</span></td>
+                <td><span class="pill green">Selesai</span></td>
+                <td><a href="#">QR</a> · <a href="#">Detail</a></td>
+              </tr>
+              <tr>
+                <td><span class="mono">DIST-2025-00421</span></td>
+                <td><span class="mono">PRM-2025-0142</span></td>
+                <td>RSUD Majalengka</td>
+                <td>Ringer Laktat 500ml</td>
+                <td class="num">2.400 pack</td>
+                <td><span class="mono">B-2025-0079</span><br><span class="muted small">exp 07/2027</span></td>
+                <td><span class="pill green">Selesai</span></td>
+                <td><a href="#">QR</a> · <a href="#">Detail</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tfoot">
+            <span>Menampilkan 7 dari 24 distribusi</span>
+            <nav class="pager">
+              <a class="on" href="distribusi.html">1</a>
+              <a href="distribusi.html">2</a>
+              <a href="distribusi.html">3</a>
+              <a href="distribusi.html">4</a>
+            </nav>
+          </div>
+        </div>
+        <p class="hint" style="padding:12px 20px 16px">Status COMPLETED hanya setelah barang diambil dan bukti serah terima tersedia (RULE-DISTRIBUTION-001). QR code digunakan untuk tracking serah terima.</p>
+      </section>
+
+      <section class="cols-sidebar">
+        <div class="card">
+          <div class="head">
+            <h2>Proses Distribusi</h2>
+            <span class="muted small">Contoh: DIST-2025-00427</span>
+          </div>
+          <div class="timeline">
+            <div class="tl-item done">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+              <div class="body"><b>Picking FEFO</b><span>Batch B-2025-0117 dipilih — expiry terdekat 08/2026</span></div>
+            </div>
+            <div class="tl-item done">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+              <div class="body"><b>Pencatatan barang keluar</b><span>Kartu stok &amp; berita acara diperbarui · 13 Okt 2025 09.15</span></div>
+            </div>
+            <div class="tl-item">
+              <div class="ic" style="color:var(--text-muted)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h13v9H1zM14 11h4l3 3v3h-7z"/><circle cx="6" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg></div>
+              <div class="body"><b>Pengambilan oleh pemohon</b><span>Jadwal pickup 13 Okt 2025 · 09.30 · scan QR di gudang</span></div>
+            </div>
+            <div class="tl-item">
+              <div class="ic" style="color:var(--text-muted)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg></div>
+              <div class="body"><b>Serah terima &amp; bukti (QR)</b><span>Status COMPLETED setelah bukti serah terima tersedia</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="head">
+            <h2>Ringkasan Hari Ini</h2>
+            <span class="badge green">87% on-time</span>
+          </div>
+          <div class="rowlist">
+            <div class="rowitem"><div class="body"><b>8 siap pickup</b><span>menunggu kurir fasilitas · QR aktif</span></div><span class="pill blue">Siap</span></div>
+            <div class="rowitem"><div class="body"><b>4 dalam pengiriman</b><span>2 program EPI · 2 obat esensial</span></div><span class="pill yellow">Jalan</span></div>
+            <div class="rowitem"><div class="body"><b>1 pickup terlambat</b><span>Pangandaran · terlambat 1 hari</span></div><span class="pill red">Terlambat</span></div>
+          </div>
+          <p class="hint" style="margin-top:10px">Barang allocated dikunci untuk satu distribusi (RULE-STOCK-002) hingga selesai atau dibatalkan.</p>
+        </div>
+      </section>
+
+      <p class="foot-note">SIMLOGKES — Sistem Informasi Manajemen Logistik Kesehatan Terintegrasi · Dinas Kesehatan Provinsi Jawa Barat</p>
+    </main>
+  </div>
+</div>
+<script src="assets/store.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

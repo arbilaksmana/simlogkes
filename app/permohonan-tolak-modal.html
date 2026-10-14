@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tolak Permohonan — SIMLOGKES</title>
+<link rel="stylesheet" href="assets/simlogkes.css">
+<link rel="icon" href="images/logo-dinkes.png">
+</head>
+<body style="background:rgba(15,23,42,0.45)">
+
+  <div style="min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:24px">
+
+    <div class="card" style="width:480px; max-width:100%; box-shadow:var(--shadow-overlay); display:flex; flex-direction:column; gap:16px">
+
+      <div class="head" style="margin-bottom:0">
+        <h2>Tolak Permohonan</h2>
+        <span class="pill red">PRM-2025-0139</span>
+      </div>
+
+      <dl class="dl">
+        <div><dt>Fasilitas</dt><dd>Puskesmas Cirebon Selatan</dd></div>
+        <div><dt>Program</dt><dd>EPI</dd></div>
+        <div><dt>Item</dt><dd>Vaksin DPT × 600 vial</dd></div>
+      </dl>
+
+      <div class="field">
+        <label for="alasan">Alasan Penolakan</label>
+        <select id="alasan">
+          <option>Stok tidak tersedia</option>
+          <option>Dokumen tidak lengkap</option>
+          <option>Diluar alokasi program</option>
+          <option>Lainnya</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="catatan">Catatan (wajib)</label>
+        <textarea id="catatan" rows="4" placeholder="Jelaskan alasan penolakan untuk fasilitas..."></textarea>
+      </div>
+
+      <div class="note yellow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 20h16a2 2 0 0 0 1.73-2Z"/><path d="M12 9v4M12 17h.01"/></svg>
+        <div>Catatan wajib diisi. Penolakan tercatat pada histori approval beserta pengguna dan waktu.</div>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:8px">
+        <a class="btn btn-secondary" href="permohonan.html">Batal</a>
+        <a class="btn btn-danger" href="permohonan.html">Tolak Permohonan</a>
+      </div>
+
+    </div>
+
+    <a class="small" href="permohonan.html" style="color:#fff; opacity:0.85">← Kembali ke daftar permohonan</a>
+
+  </div>
+
+<script src="assets/store.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

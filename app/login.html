@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masuk — SIMLOGKES</title>
+<link rel="stylesheet" href="assets/simlogkes.css">
+<link rel="icon" href="images/logo-dinkes.png">
+</head>
+<body>
+<div class="auth-wrap">
+  <div class="auth-side">
+    <div class="brandline">
+      <img src="images/logo-dinkes.png" alt="Logo Dinas Kesehatan Jawa Barat" style="width:40px; height:40px; object-fit:contain">
+      SIMLOGKES
+    </div>
+    <div>
+      <h1>Sistem Informasi Manajemen Logistik Kesehatan Terintegrasi</h1>
+      <p style="margin-top:16px">Satu platform untuk seluruh siklus logistik kesehatan Provinsi Jawa Barat — dari permohonan hingga pelaporan.</p>
+    </div>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Single source of truth stok &amp; distribusi</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Alur approval Program &amp; Farmasi terintegrasi</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Monitoring FEFO &amp; batch kedaluwarsa</li>
+    </ul>
+  </div>
+
+  <div class="auth-panel">
+    <div class="auth-card">
+      <div>
+        <h1 style="font-size:22px">Masuk</h1>
+        <p class="muted small" style="margin-top:4px">Gunakan akun fasilitas kesehatan atau akun Dinkes Anda.</p>
+      </div>
+      <form class="form">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="nama@fasilitas.go.id">
+        </div>
+        <div class="field">
+          <label for="pass">Password</label>
+          <input type="password" id="pass" placeholder="••••••••">
+        </div>
+        <div class="role-pick">
+          <span class="role-opt on">Petugas Faskes</span>
+          <span class="role-opt">Petugas Program</span>
+          <span class="role-opt">Petugas Farmasi</span>
+          <span class="role-opt">Petugas Gudang</span>
+          <span class="role-opt">Administrator</span>
+          <span class="role-opt">Kepala Bidang</span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Masuk</button>
+        <p class="hint" style="text-align:center">Belum punya akun? <a href="registrasi.html">Daftar fasilitas kesehatan</a></p>
+      </form>
+      <p class="hint" style="text-align:center">SIMLOGKES · Dinas Kesehatan Provinsi Jawa Barat</p>
+    </div>
+  </div>
+</div>
+<script src="assets/store.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

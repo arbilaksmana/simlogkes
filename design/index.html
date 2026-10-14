@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIMLOGKES — Design Reference Index</title>
+<style>
+  :root {
+    --bg: #F8FAF9;
+    --surface: #FFFFFF;
+    --border: #E2E8E5;
+    --text: #0F172A;
+    --muted: #64748B;
+    --primary: #1B7A43;
+    --primary-tint: #E7F3EC;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text); padding: 48px 32px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  header { margin-bottom: 40px; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .sub { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); margin: 36px 0 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+  a.card {
+    display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 18px; text-decoration: none; color: var(--text); transition: border-color .15s, box-shadow .15s;
+  }
+  a.card:hover { border-color: var(--primary); box-shadow: 0 4px 16px rgba(15,23,42,.06); }
+  .card .name { font-size: 14px; font-weight: 600; }
+  .card .meta { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: .5px; text-transform: uppercase;
+    background: var(--primary-tint); color: var(--primary); border-radius: 999px; padding: 2px 8px; margin-bottom: 8px; }
+  .badge.alt { background: #EEF2FF; color: #4338CA; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>SIMLOGKES — Design Reference</h1>
+    <p class="sub">Export statis HTML/CSS dari kanvas pen.dev (simlogkes.pen). Referensi implementasi UI — PRD: <em>Sistem Informasi Manajemen Logistik Kesehatan Terintegrasi</em>, Dinas Kesehatan Provinsi Jawa Barat.</p>
+  </header>
+
+  <h2>Layar Utama</h2>
+  <div class="grid">
+    <a class="card" href="executive-dashboard.html"><span class="badge">1440px</span><div class="name">Executive Dashboard V2</div><div class="meta">Monitoring KPI, peta sebaran, jadwal pickup</div></a>
+    <a class="card" href="persediaan.html"><span class="badge">1440px</span><div class="name">Persediaan</div><div class="meta">Inventori, FEFO, stock movement</div></a>
+    <a class="card" href="permohonan.html"><span class="badge">1440px</span><div class="name">Permohonan</div><div class="meta">Daftar permohonan logistik</div></a>
+    <a class="card" href="persetujuan.html"><span class="badge">1440px</span><div class="name">Persetujuan</div><div class="meta">Approval program &amp; farmasi</div></a>
+    <a class="card" href="distribusi.html"><span class="badge">1440px</span><div class="name">Distribusi</div><div class="meta">Picking, serah terima, QR tracking</div></a>
+    <a class="card" href="gudang.html"><span class="badge">1440px</span><div class="name">Gudang</div><div class="meta">Penerimaan, retur, pemusnahan</div></a>
+    <a class="card" href="batch-expired.html"><span class="badge">1440px</span><div class="name">Batch &amp; Expired</div><div class="meta">Monitoring kedaluwarsa FEFO</div></a>
+    <a class="card" href="analitik.html"><span class="badge">1440px</span><div class="name">Analitik</div><div class="meta">Tren permintaan, performa wilayah &amp; gudang</div></a>
+    <a class="card" href="laporan.html"><span class="badge">1440px</span><div class="name">Laporan</div><div class="meta">Laporan stok, distribusi, retur, pemusnahan</div></a>
+    <a class="card" href="detail-batch.html"><span class="badge">1440px</span><div class="name">Detail Batch Management</div><div class="meta">Timeline batch, rekomendasi FEFO</div></a>
+  </div>
+
+  <h2>State &amp; Overlay</h2>
+  <div class="grid">
+    <a class="card" href="permohonan-tolak.html"><span class="badge alt">Modal</span><div class="name">Tolak Permohonan</div><div class="meta">Dialog penolakan + catatan</div></a>
+    <a class="card" href="persetujuan-ditolak.html"><span class="badge alt">State</span><div class="name">Persetujuan / Ditolak</div><div class="meta">Status permohonan ditolak</div></a>
+    <a class="card" href="persetujuan-bulk.html"><span class="badge alt">Drawer</span><div class="name">Persetujuan / Bulk Approval</div><div class="meta">Drawer approval massal</div></a>
+    <a class="card" href="gudang-drawer-states.html"><span class="badge alt">States</span><div class="name">Gudang Drawer States</div><div class="meta">Need inspection, receiving, stock out</div></a>
+    <a class="card" href="distribusi-extra-states.html"><span class="badge alt">States</span><div class="name">Distribusi Extra States</div><div class="meta">Modal jadwalkan pickup, audit serah terima</div></a>
+    <a class="card" href="batch-drawer-states.html"><span class="badge alt">States</span><div class="name">Batch Drawer States</div><div class="meta">Mendekati expired, expired, cold chain</div></a>
+    <a class="card" href="analitik-drawer-states.html"><span class="badge alt">States</span><div class="name">Analitik Drawer States</div><div class="meta">Risiko expired, cold chain, regional</div></a>
+    <a class="card" href="laporan-drawer-states.html"><span class="badge alt">States</span><div class="name">Laporan Drawer States</div><div class="meta">Final, draft, review laporan</div></a>
+  </div>
+
+  <h2>Design Foundation</h2>
+  <div class="grid">
+    <a class="card" href="design-foundation.html"><span class="badge">Tokens</span><div class="name">Design Foundation</div><div class="meta">Warna, tipografi, spacing, radius, elevation, ikon, komponen</div></a>
+  </div>
+
+  <h2>Cakupan PRD → Referensi &amp; Aplikasi</h2>
+  <div class="card" style="padding:0; overflow:hidden">
+    <table style="font-size:13px">
+      <thead><tr><th>Modul PRD</th><th>Referensi Kanvas (design/)</th><th>Halaman Aplikasi (app/)</th></tr></thead>
+      <tbody>
+        <tr><td>7.1 Registrasi Fasilitas Kesehatan</td><td class="muted">— tidak ada di kanvas</td><td><a href="../app/registrasi.html">registrasi.html</a> · <a href="../app/login.html">login.html</a></td></tr>
+        <tr><td>7.2 Permohonan Logistik</td><td><a href="permohonan.html">permohonan.html</a> · <a href="permohonan-tolak.html">permohonan-tolak.html</a></td><td><a href="../app/permohonan.html">permohonan.html</a> · <a href="../app/permohonan-baru.html">permohonan-baru.html</a></td></tr>
+        <tr><td>7.3 Approval</td><td><a href="persetujuan.html">persetujuan.html</a> · <a href="persetujuan-ditolak.html">persetujuan-ditolak.html</a> · <a href="persetujuan-bulk.html">persetujuan-bulk.html</a></td><td><a href="../app/persetujuan.html">persetujuan.html</a> · <a href="../app/persetujuan-riwayat.html">persetujuan-riwayat.html</a></td></tr>
+        <tr><td>7.4 Inventory Management</td><td><a href="persediaan.html">persediaan.html</a> · <a href="batch-expired.html">batch-expired.html</a></td><td><a href="../app/persediaan.html">persediaan.html</a> · <a href="../app/batch-expired.html">batch-expired.html</a></td></tr>
+        <tr><td>7.5 Distribusi</td><td><a href="distribusi.html">distribusi.html</a> · <a href="distribusi-extra-states.html">distribusi-extra-states.html</a></td><td><a href="../app/distribusi.html">distribusi.html</a> · <a href="../app/gudang.html">gudang.html</a></td></tr>
+        <tr><td>7.6 Retur</td><td class="muted">— tidak ada di kanvas</td><td><a href="../app/retur.html">retur.html</a></td></tr>
+        <tr><td>7.7 Pemusnahan</td><td class="muted">— parsial: batch-drawer-states</td><td><a href="../app/pemusnahan.html">pemusnahan.html</a></td></tr>
+        <tr><td>10. Dashboard Monitoring</td><td><a href="executive-dashboard.html">executive-dashboard.html</a> · <a href="analitik.html">analitik.html</a></td><td><a href="../app/dashboard.html">dashboard.html</a> · <a href="../app/analitik.html">analitik.html</a></td></tr>
+        <tr><td>11. Laporan</td><td><a href="laporan.html">laporan.html</a> · <a href="laporan-drawer-states.html">laporan-drawer-states.html</a></td><td><a href="../app/laporan.html">laporan.html</a></td></tr>
+        <tr><td>6. State Machine Permohonan</td><td class="muted">— terpetakan di layar permohonan</td><td><a href="../app/permohonan.html">permohonan.html</a> (stepper)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>Sumber: simlogkes.pen (pen.dev) · 19 halaman statis, HTML + CSS murni tanpa JavaScript · Aset: images/logo-dinkes.png · Aplikasi lengkap: <a href="../app/dashboard.html">app/</a></footer>
+</div>
+</body>
+</html>
